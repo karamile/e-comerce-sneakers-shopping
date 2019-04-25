@@ -1,0 +1,39 @@
+<%= form_for(@product) do |f| %>
+ <div class="form_group">
+ <%= f.label :brand,  "brand" %>
+ <%= f.text_field :brand, class: 'form-control' %>
+</div>
+
+ <div class="form_group">
+ <%= f.label :model,  "model" %>
+ <%= f.text_field :model, class: 'form-control' %>
+</div>
+
+ <div class="form_group">
+ <%= f.label :size,  "size" %>
+ <%= f.number_field :size, class: 'form-control' %>
+</div>
+
+ <div class="form_group">
+ <%= f.label :quantity,  "qwantity" %>
+ <%= f.text_field :quantity, class: 'form-control' %>
+</div>
+
+ <div class="form_group">
+ <%= f.label :price,  "price" %>
+ <%= f.number_field :price, value: 1, class: 'form-control', min:1 %>
+</div>
+
+ <dev class="form_group">
+	<%= f.label :image, "image" %>
+	<%= f.file_field :image, class: 'form-control' %>
+	</dev>
+
+
+ <div class="form_group">
+ <%= f.label :release_date,  "release_date" %>
+ <%= f.datetime_field :release_date, class: 'form-control' %>
+</div>
+
+ <%= f.submit "save", class: 'btn btn-success' %>
+  <% end %> 
