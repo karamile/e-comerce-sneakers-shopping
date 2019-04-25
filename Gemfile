@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'mini_magick'
+gem 'carrierwave'
+gem 'simple_form'
+gem 'devise'
+gem 'gravatar_image_tag'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
